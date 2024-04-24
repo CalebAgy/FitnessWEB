@@ -1,24 +1,20 @@
 package htwberlin.webtech.Springbootexample;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class Exercise {
+public class planExercise {
 
     private String name;
     private String Weekday;
     private String description;
     private String difficulty;
 
-    @GetMapping("/Fitness")
 
     public String Fitness() {
         return "Herzlich Willkommen auf der Webseite!";
     }
-    public Exercise(){
+    public planExercise(){
     }
-    public Exercise(String name, String weekday, String description, String difficulty) {
+    public planExercise(String name, String weekday, String description, String difficulty) {
         this.name = name;
         this.Weekday = weekday;
         this.description = description;
